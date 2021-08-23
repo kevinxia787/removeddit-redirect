@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    
+  {% if error %}
+  <h2>Removeeddit Quick-direct</h2>
+  <p>{{error}}</p>
+  {% else %}
+  <h2>Removeeddit Quick-direct</h2>
+  {% endif %}
+  <form action="{{ url_for('removeddit')}}" method="post">
+    <label for="fname">Reddit Link:</label><br>
+    <input type="text" onfocus="this.value=''" id="reddit_link" name="reddit_link" value="Insert reddit link here"><br>
+    <input type="submit" value="Submit">
+  </form> 
+
+  </body>
+</html>
